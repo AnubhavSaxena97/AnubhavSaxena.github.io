@@ -1,6 +1,6 @@
 ﻿<?php
 
-$siteOwnersEmail = 'contact@anubhavsaxena.info';
+$targetEmail = 'contact@anubhavsaxena.info';
 
 
 if($_POST) {
@@ -45,8 +45,8 @@ if($_POST) {
 
    if (!$error) {
 
-      ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+      ini_set("sendmail_from", $targetEmail); // for windows server
+      $mail = mail($targetEmail, $subject, $message, $headers);
 
 		if ($mail) { echo "OK"; }
       else { echo "Something went wrong. Please try again."; }
