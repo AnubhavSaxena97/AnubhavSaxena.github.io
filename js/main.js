@@ -66,9 +66,9 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			
 		thumbnail_navigation    :   0,			
 		slides 					:  	[			
-											{image : '_include/img/slider-images/image01.jpg', title : '<div class="boldname"><font color="#b0b0b0">/ / </font>ANUBHAV</div><div class="boldname">SAXENA</div><div class="titlesubtext" id="firstone">The homepage of</div><div class="thespicychickentitle">thespicychicken <font color="#313b8f">and</font></div><div class="xhpwntitle"><a href="/xhpwn" target="_blank">xhpwn</a><font color="#313b8f">.</font></div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.jpg', title : '', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.jpg', title : '', thumb : '', url : ''},
+											{image : 'img/slider-images/image01.jpg', title : '<div class="boldname"><font color="#b0b0b0">/ / </font>ANUBHAV</div><div class="boldname">SAXENA</div><div class="titlesubtext" id="firstone">The homepage of</div><div class="thespicychickentitle">thespicychicken <font color="#313b8f">and</font></div><div class="xhpwntitle"><a href="/xhpwn" target="_blank">xhpwn</a><font color="#313b8f">.</font></div>', thumb : '', url : ''},
+											{image : 'img/slider-images/image02.jpg', title : '', thumb : '', url : ''},
+											{image : 'img/slider-images/image03.jpg', title : '', thumb : '', url : ''},
 									],
 
 		
@@ -165,7 +165,7 @@ BRUSHED.contactForm = function(){
 
 		$.ajax({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "php/contact.php",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -187,7 +187,7 @@ BRUSHED.tweetFeed = function(){
 	var valueTop = -64;
 
     $("#ticker").tweet({
-          modpath: '_include/js/twitter/',
+          modpath: 'js/twitter/',
           username: "Bluxart",
           page: 1,
           avatar_size: 0,
@@ -331,7 +331,7 @@ $(document).ready(function(){
 	Modernizr.load([
 	{
 		test: Modernizr.placeholder,
-		nope: '_include/js/placeholder.js',
+		nope: 'js/placeholder.js',
 		complete : function() {
 				if (!Modernizr.placeholder) {
 						Placeholders.init({
