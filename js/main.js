@@ -67,8 +67,6 @@ BRUSHED.slider = function(){
 		thumbnail_navigation    :   0,			
 		slides 					:  	[			
 											{image : 'img/slider-images/image01.jpg', title : '<div class="boldname"><font color="#b0b0b0">/ / </font>ANUBHAV</div><div class="boldname">SAXENA</div><div class="titlesubtext" id="firstone">The homepage of</div><div class="thespicychickentitle">thespicychicken <font color="#313b8f">and</font></div><div class="xhpwntitle"><a href="/xhpwn" target="_blank">xhpwn</a><font color="#313b8f">.</font></div>', thumb : '', url : ''},
-											{image : 'img/slider-images/image02.jpg', title : '', thumb : '', url : ''},
-											{image : 'img/slider-images/image03.jpg', title : '', thumb : '', url : ''},
 									],
 
 		
