@@ -1,312 +1,422 @@
 <!DOCTYPE html>
-<html ng-app="">
+
+<html lang="en-US">
 <head>
 
-   <meta charset="utf-8">
-	<title>Purdue Web Dev Club</title>
-	<meta name="description" content="Purdue Web Dev Club">
-	<meta name="author" content="Anubhav Saxena">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Anubhav Saxena</title>
 
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="icon" type="image/png" href="_include/img/favicon.png">
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+<link href="_include/css/main.css" rel="stylesheet">
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="_include/css/fonts.css" rel="stylesheet">
+<link href="_include/css/shortcodes.css" rel="stylesheet">
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
 
-	<script src="js/modernizr.js"></script>
-
-	<link rel="shortcut icon" href="favicon.png" >
+<script src="_include/js/modernizr.js"></script>
 
 </head>
 
 <body>
 
-   <header id="home">
-
-<nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a> <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About The Club</a></li>
-	    <li><a class="smoothscroll" href="#portfolio">Exec Board</a></li>
-            <li><a class="smoothscroll" href="#resume">FAQ</a></li>
-         </ul>
-
-      </nav>
-
-      <div class="row banner">
-         <div class="banner-text">
-            <img src="images/logo.png"><br>
-            <img src="images/webdevclub.png">
-            <hr />
-            <ul class="social">
-               <li><a href=mailto:"anubhav@saxena.xyz"><img src="images/port/mail.jpg"></a></li>
-               <li><a href="https://www.facebook.com/groups/722867181083626/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="http://www.github.com/purduewebdevclub" target="_blank"><img class="moveimage" src="images/port/github.png"></a></li>
-            </ul>
-         </div>
-      </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header>
-
-   <section id="about">
-
-      <div class="row">
-
-         <div class="nine columns main-col" style="width : 100%;">
-
-            <p style="color : white;">Want to build amazing looking websites? You've come to the right place! Purdue's Web Dev Club teaches anyone and everyone how to program and build their own websites from scratch!
-            </p>
-
-            <p style="color : white"><strong>Next meeting?</strong> It's on {{meeting.meetingDate}} at {{meeting.meetingTime}} in {{meeting.meetingLocation}}. Be there!
-            </p>
-
-               </div>
-
-      </div>
-
-   </section>
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Purdue Web Dev Club's Executive Board</h1>
-
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/port/modals/maneesh.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Maneesh Tewani</h5>
-                              <p>Co-Founder, President, and Lead Web Developer</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
+<div class="ole">
+    <section id="jSplash">
+	<div id="circle"></div>
+    </section>
 </div>
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
 
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/port/modals/anubhav.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Anubhav Saxena</h5>
-                              <p>Co-Founder, Webmaster, Web Developer</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
+<div id="home-slider">
+    <div class="overlay"></div>
 
-                  </div>
-          		</div>
+    <div class="slider-text">
+    	<div id="slidecaption"></div>
+    </div>
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
+	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list"></ul>
 
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/port/modals/abhijeet.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Abhijeet Chakrabarti</h5>
-                              <p>Co-Founder and Treasurer</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
+        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+</div>
 
-                  </div>
-          		</div>
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/port/modals/avadhoot.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Avadhoot Joshi</h5>
-                              <p>Co-Founder and Vice President</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div>
-
-
-                  </div>
-          		</div>
-          </div>
-         </div>
-</section>
-   <section id="resume">
-
-      <div class="row education" style="text-align : center;">
-        <h2>FAQ</h2>
-
-        <div class="container">
-                <div class="text-center pagination-centered">
-                    <p style="font-size : 1.5em; color : black;"><br>Who can join?</p>
-                </div>
-                <div class="text-center pagination-centered">
-                    <p style="color : black;">Anyone who wants to learn how to make their own websites!
-                    <br>Students from all fields, majors, and experience levels are welcome!</p>
-                </div>
-
-                <div class="text-center pagination-centered">
-                    <p style="font-size : 1.5em; color : black;"><br>I already know the basics. Why should I join?</p>
-                </div>
-                <div class="text-center pagination-centered">
-                    <p style="color : black;">Good news. We not only have a bootcamp for beginners, but also<br>
-                        a module for more experienced people, with tutorials on technologies<br>
-                        they want to learn about, along with many tech-talks by corporate sponsors<br>
-                        and senior students. It's worth joining!</p>
-                </div>
-                <div class="text-center pagination-centered">
-                    <p style="font-size : 1.5em; color : black;"><br>What if I miss a meeting? How do I cover up?</p>
-                </div>
-                <div class="text-center pagination-centered">
-                    <p style="color : black;">We will be recording our meetings and uploading them for<br>
-                    members to review their knowledge or cover up missed meetings.</p>
-                </div>
-                <div class="text-center pagination-centered">
-                    <p style="font-size : 1.5em; color : black;"><br>Sounds fun! When does the club meet?</p>
-                </div>
-                <div class="text-center pagination-centered">
-                    <p style="color : black;">Club Meetings are at
-                      6:00 PM on Mondays and Thursdays.<br>
-                       Sign up for our mailing list by filling the form
-                      <a class="underlined-link" href="http://bit.ly/1oEL5vH" target="_blank">here</a></u> for important updates including
-                       locations and agendas for meetings!
-                    </p>
-                </div>
-            </div>
-
-      </div>
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/port/maneesh.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Maneesh Tewani</h4>
-			      <p>Maneesh Tewani grew up in St. Louis, MO. He currently works at Oasis Digital Solutions as the Intern Team Leader. He has been working and teaching HTML, CSS & JavaScript along with the popular front-end Framework, AngularJS for the past two years.
-<br><br>
-Besides working, he spends his time learning new front-end technologies, answering questions on Quora and reading up on Star Wars: The Force Awakens' Snoke theories.</p>
-               <span class="categories" style="color : black;">Co-Founder, President, Lead Web Developer</span>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/port/anubhav.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Anubhav Saxena</h4>
-			      <p>Anubhav Saxena is from Mumbai, India. A freshman at Purdue, programming since 6 years, he has a wide range of experience in software, scripting, mobile dev, and web dev. He has years of experience in basic front and back end, and knowledge of a large number of frameworks.
-<br><br>
-A guitarist, DJ, beatboxer, sportsman, and major league gamer, and loves creating hacking scripts and programs in his free time.</p>
-               <span class="categories" style="color : black;">Co-Founder, Webmaster, Web Developer</span>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/port/abhijeet.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Abhijeet Chakrabarti</h4>
-                  <p>Abhijeet is a young freshman at Purdue University, who has big ambitions to make the world a better place through constructive use of technology. He is a content creator at heart. Logistics and details are his friends.
-<br><br>
-While not weaving content, Abhijeet can be found wandering off-trail in the woods, hanging by the cliffs, or building cool tech in a coffee shop! Or, competing in FIFA.</p>
-               <span class="categories" style="color : black;">Co-Founder, Treasurer</span>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/port/avadhoot.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Avadhoot Joshi</h4>
-                  <p>Avadhoot Joshi is a freshman at Purdue University. He envisions improving human life through technology and works towards that goal.
-<br><br>
-Besides programming, he enjoy playing badminton, reading fiction, and watching TV.</p>
-               <span class="categories" style="color : black;"</span>
-		      </div>
-
-            <div class="link-box">
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-
-
-
-
-      </div>
-
-   </section>
-
-<footer>
-      <div class="row">
-
-         <div class="twelve columns">
-            <ul class="copyright">
-               <li><font color="#ffffff">&copy; Purdue Web Dev Club | 2016</font></li>
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<li class="current"><a href="#home-slider">Home</a></li>
+                <li><a href="#meta">Meta</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#work">Projects</a></li>
             </ul>
+        </nav>
 
-         </div>
+    </div>
+</header>
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+<div id="meta" class="page">
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Descriptive Metadata</h2>
+                <h3 class="title-description">Footballer. Guitarist. DJ. Beatboxer. EDM Producer. Keyboardist. Major League Gamer.</h3>
+                <h3 class="title-description" id="alsoprogrammermargin">Also, programmer.</h3>
+                <a class="button" href="/resume.pdf" id="redresumebutton">Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
-      </div>
+<div id="resume" class="page">
+	<div class="container">
 
-   </footer>
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Pseudo-Resume</h2>
+                </div>
+            </div>
+        </div>
 
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+        <div class="row">
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+        	<div class="span6">
+            	<h3 class="spec">Computer</h3>
+
+                <div class="accordion-group">
+                    <div class="accordion-heading accordionize">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#fourArea">
+                        Software Programming
+                        <span class="font-icon-arrow-simple-down"></span>
+                    </a>
+                    </div>
+                    <div id="fourArea" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Knowledge and experience in Ruby, Java, Python, C, C++
+                        </div>
+                        <div class="accordion-inner">
+                            Developed applications and scripts such as HackSaw, Pulse, and TaskMachine.
+                        </div>
+                    </div>
+                </div>
+
+        		<div class="accordion" id="accordionArea">
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#oneArea">
+                                Web Development
+                                <span class="font-icon-arrow-simple-down"></span>
+                            </a>
+                        </div>
+                        <div id="oneArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                - Co-Founder, Instructor, and Webmaster of the Purdue Web Dev Club at Purdue University.
+                            </div>
+                            <div class="accordion-inner">
+                                - Technologies - HTML5, CSS (+ Bootstrap), Javascript, jQuery, Node.js, Express.js, AngularJS, React, Rails (Ruby), PHP, SQL, MongoDB
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#twoArea">
+                            Security
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </a>
+                        </div>
+                        <div id="twoArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Proficiency using popular penetration testing tools including Metasploit, Ettercap, Wireshark, etc. Knowledge and skills in attacks such as SQL injection and Cross Site Scripting.
+                            </div>
+                            <div class="accordion-inner">
+                                Developed a 128-bit encryption and decryption algorithm called "HackSaw", a Honeypot form skeleton called "Spampot", and various Brute Forcing scripts using public dictionaries.
+                            </div>
+                            <div class="accordion-inner">
+                                Bugtesting and bug reporting experience.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#threeArea">
+                            Mobile
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </a>
+                        </div>
+                        <div id="threeArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Experience building on and working with iOS and Android applications and environments.
+                            </div>
+                            <div class="accordion-inner">
+                                Built apps such as ProxyHunt and Gridlink.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading accordionize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#fiveArea">
+                            Hardware
+                            <span class="font-icon-arrow-simple-down"></span>
+                        </a>
+                        </div>
+                        <div id="fiveArea" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Experience with Arduino, Raspberry Pi, and Oculus Rift.
+                            </div>
+                            <div class="accordion-inner">
+                                Working on project Illuminux, based on seven Arduino systems.
+                            </div>
+                        </div>
+                    </div>
+
+            	</div>
+
+        	</div>
+
+            <div class="span6">
+            	<h3 class="spec">Miscellaneous</h3>
+
+                <div class="accordion" id="toggleArea">
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading togglize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseOne">
+                                Sports
+                                <span class="font-icon-plus"></span>
+                                <span class="font-icon-minus"></span>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Soccer - International, national, and club level. A part of the high school soccer team.
+                            </div>
+                            <div class="accordion-inner">
+                                Tennis - Won inter-club tournaments.
+                            </div>
+                            <div class="accordion-inner">
+                                Swimming - Won inter-club tournaments.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading togglize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseTwo">
+                            Music
+                            <span class="font-icon-plus"></span>
+                            <span class="font-icon-minus"></span>
+                        </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Guitar - Played at events such as the International Youth Conference. Played and won band competitions.
+                            </div>
+                            <div class="accordion-inner">
+                                DJ - Certified DJ, performed at clubs and managed sound at events.
+                            </div>
+                            <div class="accordion-inner">
+                                EDM - Extensive knowledge of Ableton Live, Logic Pro, FL Studio, Massive, and other DAWs. Have unreleased tracks and remixes. Knowledge of sound engineering, and managed sound for professional videos.
+                            </div>
+                            <div class="accordion-inner">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading togglize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseThird">
+                            Major League Gaming
+                            <span class="font-icon-plus"></span>
+                            <span class="font-icon-minus"></span>
+                        </a>
+                        </div>
+                        <div id="collapseThird" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Won various first-person shooter competitions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading togglize">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#" href="#collapseFourth">
+                            YouTube
+                            <span class="font-icon-plus"></span>
+                            <span class="font-icon-minus"></span>
+                        </a>
+                        </div>
+                        <div id="collapseFourth" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                NukeParty - A channel of Clash of Clans replays, compilations, and tutorials, soon to expand into other games and domains.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+        	<div class="span12">
+            	<hr>
+            </div>
+        </div>
+
+<div id="work" class="page">
+	<div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Projects and Organizations</h2>
+                    <h3 class="title-description" id="projectsubtitle">Find more of my projects on <a href="http://github.com/xhpwn" target="_blank">Github</a>.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+        	<div class="span3">
+                <nav id="options" class="work-nav">
+                    <ul id="filters" class="option-set" data-option-key="filter">
+                    	<li class="type-work">Filter By Type</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+                        <li><a href="#filter" data-option-value=".webdev">Web Development</a></li>
+                        <li><a href="#filter" data-option-value=".mobile">Mobile</a></li>
+                        <li><a href="#filter" data-option-value=".software">Scripting and Software</a></li>
+                        <li><a href="#filter" data-option-value=".security">Security</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="span9">
+            	<div class="row">
+                	<section id="projects">
+                    	<ul id="thumbs">
+
+                        	<li class="item-thumbs span3 webdev">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Purdue Web Dev Club" href="_include/img/work/full/image-01-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="_include/img/work/thumbs/image-01.jpg" alt="A 200+ member student organization at Purdue University.">
+                            </li>
+
+                        	<li class="item-thumbs span3 security">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="HackSaw" href="_include/img/work/full/image-02-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="_include/img/work/thumbs/image-02.jpg" alt="A 128-bit encryption and decryption algorithm written in Ruby.">
+                            </li>
+
+                        	<li class="item-thumbs span3 mobile">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="ProxyHunt" href="_include/img/work/full/image-03-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="_include/img/work/thumbs/image-03.jpg" alt="An Android application built during HackIllinois, allowing students to look for other students willing to take their iClickers to class for attendance.">
+                            </li>
+
+                        	<li class="item-thumbs span3 security">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="SpamPot" href="_include/img/work/full/image-04-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+
+                                <img src="_include/img/work/thumbs/image-04.jpg" alt="A honeypot skeleton form against spambots, written in PHP.">
+                            </li>
+
+                        	<li class="item-thumbs span3 software">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="TaskMachine" href="_include/img/work/full/image-05-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+
+                                <img src="_include/img/work/thumbs/image-05.jpg" alt="Data and task management desktop standalone software, written in Java.">
+                            </li>
+
+                        	<li class="item-thumbs span3 software">
+
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Pulse" href="_include/img/work/full/image-06-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+
+                                <img src="_include/img/work/thumbs/image-06.jpg" alt="A simple and clean text editor, written in Java.">
+                            </li>
+
+                        	<li class="item-thumbs span3 design">
+
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="NukeParty" href="_include/img/work/full/image-07-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+
+                                <img src="_include/img/work/thumbs/image-07.jpg" alt="A YouTube channel for Clash of Clans replays and compilations.">
+                            </li>
+
+                        	<li class="item-thumbs span3 mobile">
+
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="GridLink" href="_include/img/work/full/image-08-full.jpg">
+                                	<span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+
+                                <img src="_include/img/work/thumbs/image-08.jpg" alt="Secure company communication channel with administrator monitoring features. Made at BoilerMake.">
+                            </li>
+
+                        </ul>
+                    </section>
+
+            	</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+    <nav class="icons-example">
+        <ul>
+            <li><a href="http://github.com/xhpwn" target="_blank"><span class="font-icon-social-github"></span></a></li>
+            <li><a href="http://facebook.com/anubhav.saxena.716" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+            <li><a href="http://twitter.com/xhpwn" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
+            <li><a href="http://plus.google.com/u/0/113508772234671641191/" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
+            <li><a href="http://www.linkedin.com/in/anubhav-saxena-241255105" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCWrMbqgmAk_v0R3EXGl4dhw" target="blank"><span class="font-icon-social-youtube"></span></a></li>
+        </ul>
+    </nav>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="_include/js/bootstrap.min.js"></script>
+<script src="_include/js/supersized.3.2.7.min.js"></script>
+<script src="_include/js/waypoints.js"></script>
+<script src="_include/js/waypoints-sticky.js"></script>
+<script src="_include/js/jquery.isotope.js"></script>
+<script src="_include/js/jquery.fancybox.pack.js"></script>
+<script src="_include/js/jquery.fancybox-media.js"></script>
+<script src="_include/js/jquery.tweet.js"></script>
+<script src="_include/js/plugins.js"></script>
+<script src="_include/js/main.js"></script>
 
 </body>
-
 </html>
