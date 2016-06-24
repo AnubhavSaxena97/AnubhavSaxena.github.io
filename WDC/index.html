@@ -14,7 +14,11 @@
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
 
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    
+    <script src="js/firebase.js"></script>
 	<script src="js/modernizr.js"></script>
+    
 
 	<link rel="shortcut icon" href="favicon.png" >
 
@@ -65,8 +69,7 @@
             <p style="color : white;">Want to build amazing looking websites? You've come to the right place! Purdue's Web Dev Club teaches anyone and everyone how to program and build their own websites from scratch!
             </p>
 
-            <p style="color : white"><strong>Next meeting?</strong> It's on {{meeting.meetingDate}} at {{meeting.meetingTime}} in {{meeting.meetingLocation}}. Be there!
-            </p>
+            <p style="color : white" id="meetingdetails"></p>
 
                </div>
 
@@ -300,6 +303,8 @@ Besides programming, he enjoy playing badminton, reading fiction, and watching T
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   
+<script src="js/firebase.js"></script>
 
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
