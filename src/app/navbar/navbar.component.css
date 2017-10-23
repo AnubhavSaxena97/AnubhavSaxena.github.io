@@ -1,0 +1,37 @@
+.navimage {
+  height: 21px;
+  width: 21px;
+  float: left;
+  margin-right: 10px;
+}
+
+.navsocial {
+  height: 20px;
+  width: 20px;
+}
+
+.active {
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+.links a:hover{
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+#icon {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+#icon {
+  float: right;
+}
+}
+
+nav {
+  box-shadow: 0 0 3px black;
+}
